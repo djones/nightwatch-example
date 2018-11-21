@@ -6,6 +6,7 @@ module.exports = {
   src_folders : ['tests'],
   output_folder: 'reports',
   custom_assertions_path: '',
+  custom_commands_path: './commands',
   live_output: false,
   disable_colors: false,
   selenium: {
