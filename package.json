@@ -4,7 +4,9 @@
   "description": "Nightwatch example",
   "main": "index.js",
   "scripts": {
-    "test": "percy exec -- nightwatch"
+    "e2e-test": "percy exec -- nightwatch",
+    "e2e-test:chrome": "npm run e2e-test -- --env chrome",
+    "e2e-test:firefox": "npm run e2e-test -- --env firefox"
   },
   "repository": {
     "type": "git",
