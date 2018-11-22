@@ -6,7 +6,8 @@
   "scripts": {
     "e2e-test": "percy exec -- nightwatch",
     "e2e-test:chrome": "percy exec -- nightwatch --env chrome",
-    "e2e-test:firefox": "percy exec -- nightwatch --env firefox"
+    "e2e-test:firefox": "percy exec -- nightwatch --env firefox",
+    "debug": "node --inspect-brk node_modules/nightwatch/bin/runner.js --env chrome"
   },
   "repository": {
     "type": "git",
