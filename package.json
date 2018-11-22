@@ -4,9 +4,9 @@
   "description": "Nightwatch example",
   "main": "index.js",
   "scripts": {
-    "e2e-test": "nightwatch",
-    "e2e-test:chrome": "npm run e2e-test -- --env chrome",
-    "e2e-test:firefox": "npm run e2e-test -- --env firefox",
+    "e2e-test": "percy exec -- nightwatch",
+    "e2e-test:chrome": "percy exec -- nightwatch --env chrome",
+    "e2e-test:firefox": "percy exec -- nightwatch --env firefox",
     "debug": "node --inspect-brk node_modules/nightwatch/bin/runner.js --env chrome"
   },
   "repository": {
@@ -24,5 +24,8 @@
     "geckodriver": "^1.11.0",
     "nightwatch": "^1.0.6",
     "selenium-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@percy/agent": "^0.1.3"
   }
 }
